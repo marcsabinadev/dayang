@@ -1,0 +1,41 @@
+-------------------------------------------
+CREACION DE LOS USUARIOS
+-------------------------------------------
+sudo adduser [user]
+
+-------------------------------------------
+CREAR USUARIO SUDO
+-------------------------------------------
+usermod -aG sudo [user]
+
+-------------------------------------------------
+DEFINIR REGLAS DEL FIREWALL
+-------------------------------------------------
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+-------------------------------------------------
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+-------------------------------------------------
+ACTIVARLO
+sudo ufw enable
+-------------------------------------------------
+COMPROVAR LAS REGLAS PARA VER SI ESTAN ACTIVAS
+sudo ufw status
+-------------------------------------------------
+
+-------------------------------------------
+INSTALACION APACHE
+-------------------------------------------
+sudo apt update
+sudo apt install apache2 
+
+-------------------------------------------
+INSTALACION PHP
+-------------------------------------------
+sudo apt install php
+
+-------------------------------------------
+INSTALACION MySQL
+-------------------------------------------

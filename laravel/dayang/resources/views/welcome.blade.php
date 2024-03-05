@@ -1,0 +1,31 @@
+<x-layouts.app>
+    <x-slot name="title">
+        Home title
+    </x-slot>
+        <div class="container-fluid">
+            <div class="row parallax1 position-relative">
+                <div class="center-title text-center mb-0 text-light position-absolute start-50 top-50 translate-middle">
+                    <h1 class="mainTitle">DAYANG</h1>                   
+                </div>
+            </div>
+        </div>
+        <div class="container-fliud bg-dark">
+            <div class="container py-5">
+                <p class="text-center text-light subtitulos">¿¿¿Estás preparad@ para la nueva aventura de rol???</p>
+                <p class="letra fs-4">
+                    Daddy Yankee, cuyo nombre real es Ramón Luis Ayala Rodríguez, es un cantante, compositor y productor musical puertorriqueño, considerado uno de los pioneros del reggaetón.
+
+                    Comenzó su carrera musical en la década de 1990 como parte del grupo de rap underground "Playero", liderado por DJ Playero. En 2002, lanzó su álbum debut en solitario, "El Cangri.com", que incluía éxitos como "Latigazo" y "Ella está soltera".
+                        
+                    Daddy Yankee alcanzó la fama internacional con su canción "Gasolina" en 2004, que se convirtió en un éxito mundial y ayudó a popularizar el reggaetón a nivel mundial. A lo largo de los años, ha lanzado numerosos éxitos como "Lo Que Pasó, Pasó", "Rompe", "Limbo", "Shaky Shaky", entre otros.
+                        
+                    Además de su carrera musical, Daddy Yankee también ha incursionado en la actuación, apareciendo en películas como "Talento de barrio" y "Los Cangris". También ha trabajado como productor en proyectos como la serie de televisión "Que Viva la Música" y el álbum "Mas Flow 2" de Luny Tunes.
+                        
+                    A lo largo de su carrera, Daddy Yankee ha recibido numerosos premios y reconocimientos, incluyendo premios Billboard de la Música Latina, premios Latin Grammy y premios Lo Nuestro. Es considerado uno de los artistas latinos más influyentes de todos los tiempos y ha sido referido como el "Rey del Reggaetón".
+                        
+                    Después de alcanzar el punto más alto de su carrera Daddy Yankee se corrompió y pasó a ser un malvado el cual quería robar la música a todas las personas. Y ahí apareces tú quien no lo permitirá.
+                </p>
+            </div>
+        </div>
+    </div>
+</x-layouts.app>

@@ -1,0 +1,11 @@
+@font-face {
+    font-family: PressStart2p-Regular;
+    src: url(/assets/font/PressStart2P-Regular.ttf)
+}
+@font-face {
+    font-family: Anaheim;
+    src: url(/assets/font/Anaheim/Anaheim-Regular.ttf)
+}
+* {
+    font-family: PressStart2p-Regular;
+}

@@ -1,0 +1,5 @@
+SECCIONES
+-home
+-about
+-personajes
+-desarrolladores

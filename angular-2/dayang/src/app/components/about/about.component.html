@@ -1,0 +1,83 @@
+<div class="container-fluid bg-dark text-light">
+    <div class="container-fluid ">
+        <p class="fs-6 text-center p-5 ">
+            Dayang es un videojuego de turnos con la musica como aspecto
+        </p>
+    </div>
+    <div class="container-fluid bd-dark bg-opacity-25">
+        <div class="container py-5 my-5 ">
+            <div class="row">
+                <div class="col-4 align-self-center">
+                    <h4 class="text-left fs-3">EL VILLANO</h4>
+                    <p class="bodytext fs-6">
+                        El villano de la historia es Daddy Yankee el cual ha robado la música y
+                        tendremos que recuperarla derrotando a este
+                    </p>
+                </div>
+                <div class="col-6 offset-2">
+                    <img src="/assets/img/daddyyankee.jpeg" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-5 my-5 ">
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8">
+                        <img src="/assets/img/tablero.jpg" alt="tablero" class="img-fluid">
+                    </div>
+                    <div class="col-4 align-self-center">
+                        <h4 class="text-end fs-3">EL TABLERO</h4>
+                        <p class="text-end fs-6">
+                            Este es el tablero en el cual se desarrolla nuestro juego
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" *ngFor="let u of allUsers">{{u.username}}</div>
+        <div class="row" *ngFor="let t of allTournaments">{{t.id}}</div>
+        <div class="row" *ngFor="let ut of allUser_tournaments">{{ut.user_id}} | {{ut.tournament_id}}</div>
+    </div>
+
+
+    <!-- <div class="accordion" id="accordionExample">
+        <div class="accordion-item" *ngFor="let tournament of tournaments">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" [attr.data-bs-toggle]="'collapse'" [attr.data-bs-target]="'#collapse' + tournament.id"
+                    [attr.aria-expanded]="expanded[tournament.id]" [attr.aria-controls]="'collapse' + tournament.id"
+                    (click)="toggleAccordion(tournament.id)">
+              {{ tournament.id }} {{ tournament.title }} {{ tournament.location }}
+            </button>
+          </h2>
+          <div [id]="'collapse' + tournament.id" class="accordion-collapse collapse" [attr.aria-labelledby]="'headingOne'" [attr.data-bs-parent]="'#accordionExample'"
+               [ngClass]="{'show': expanded[tournament.id]}">
+            <div class="accordion-body">
+              <table class="table table-dark table-responsive-lg text-center table-sm">
+                <tr>
+                  <th>Username</th>
+                  <th>Tournament</th>
+                  <th></th>
+                  <th></th>
+                </tr>
+                <tr *ngFor="let registration of registrations">
+                  <ng-container *ngIf="tournament.id == registration.tournament_id">
+                    <td> {{ users[registration.user_id - 1].username }}</td>
+                    <td> {{ registration.tournament_id }}</td>
+                    <td><button type="button" class="btn btn-primary"
+                                [attr.data-bs-toggle]="'modal'" [attr.data-bs-target]="'#modal' + registration.user_id">Actualizar</button>
+                    </td>
+                    <td><button type="button" class="btn btn-danger" (click)="deleteRegistration(registration.id)">Eliminar</button></td>
+                  </ng-container>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div> -->
+      
+    </div>
